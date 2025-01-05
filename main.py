@@ -10,8 +10,8 @@ entry = Entry()
 
 def main():
     with open (entry.get(), 'a') as file:
-        file.write(text.get())
-button = Button(text="save", bg = 'white', fg = "black")
+        file.write(text.get('1.0', END))
+button = Button(text="save", bg = 'white', fg = "black", command= main)
 
 #packing everything up
 label.place(width=600)
